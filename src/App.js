@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>React To Do App</h2>
       </header>
+      <input type="text" name="input" id="input" />
+      <button className="add-button" type="submit">
+        Add To Do
+      </button>
+      <div className="to-do-container">
+        <p className="to-do">to do</p>
+        <button className="delete-button">Delete</button>
+      </div>
     </div>
   );
 }
