@@ -49,14 +49,29 @@ input {
 }
 
 .to-do-container {
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1.4rem;
 }
 
-.to-do {
+.to-dos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-do-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.6rem;
+}
+
+.to-do {
   margin-right: 2.5rem;
 }
 
@@ -73,4 +88,12 @@ input {
 
 .delete-button:hover {
   background-color: rgba(140, 2, 2, 0.7);
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+p {
+  cursor: pointer;
 }
